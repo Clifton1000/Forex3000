@@ -1,0 +1,1094 @@
+@charset "utf-8";
+/*
+
+   Filename: styles.css
+   
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background: rgba(71,75,107,0.2);
+   font-family: 'Roboto', Microsoft JhengHei, Myriad Hebrew, Verdana, Geneva, sans-serif;
+   font-size: 16px;
+   
+}
+
+body {
+   position: relative;
+   display: block; 
+   background: #F5F5F5;
+   max-width: 1200px;
+   min-width: 375px;
+   margin: 0px auto;
+   border: 1px solid rgb(221, 221, 221);
+   color: rgba(18,18,18,1.00);
+}
+
+p {
+   font-size: 1em;
+   line-height: 1.4em;
+   margin: 2% 5%;
+   text-indent: 2em;
+}
+
+/* Header Styles */
+
+body > header > h1#hide_h1 {
+	visibility: hidden;
+	position: absolute;
+	top: 50; right: 50;
+	
+}
+body > header {
+   width: 100%;
+   background: #F5F5F5;
+}
+
+body > header > img#imgLogo {
+   display: block;
+   width: 100%;
+}
+
+
+/* Main Navigation Styles */
+
+nav#nav-main {
+	display: block;
+	position: relative;
+	
+}
+nav#nav-main ul {
+    width: 65%;
+	margin-left: 35%;
+    background-color: #426cbe;
+	position: absolute; 
+}
+
+nav#nav-main ul li {	
+    postion: relative;	
+    display: inline-block;
+	padding: 2% 2%;
+	float: left;
+	border-bottom: 4px solid #ffbf46;
+}
+
+nav#nav-main ul li a {
+	font-size: 1.2em;
+	color: white;
+}
+
+nav form#signIn {
+	position: relative;
+	left: 61.3%;
+	width: 450px;
+	line-height: 10%;
+		
+}
+
+nav form#logout {
+	position: relative;
+	left: 63.5%;
+	width: 450px;
+	line-height: 10%;
+		
+}
+
+nav form#signIn input {
+	float: left;
+	margin-left: 1.3em;
+	margin-top: 1em; /*centers form vertically inside nav*/
+	margin-bottom: 0px;
+}
+
+a#forgot {
+	color: rgba(255,128,128,0.8);
+	font-size: 0.8em;
+	margin-left: 90px;
+	position: relative;
+	top: 5px;
+}
+
+a#forgot:hover {
+	color: rgba(255,210,210,1.00);
+}
+
+nav#nav-main ul li:hover, nav#nav-main ul li:active {
+   color: rgba(255, 255, 255, 0.9);
+   text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+   border-bottom: 2px solid #ffbf46;
+}
+
+/* responsive Nav */
+
+#nav-trigger {
+  display: none;
+  text-align: center; }
+  
+  nav#nav-mobile {
+    display: none; }
+
+/* Button Style */
+
+#loginBtn {
+	position: relative;
+	bottom: 5px;
+	right: 6px;
+}
+
+/* Main Styles */
+
+main {
+	background-color: #F5F5F5;
+	display: block;
+}
+
+main#home-page {
+	height: auto;
+}
+
+
+
+/* Section Styles */
+
+section.container { 
+	display: block;
+   margin: 3% 2% 3% 2%;
+   background-color: white;
+   border: 1px solid rgb(221, 221, 221); 
+	height: auto;
+} 
+
+section#FAQ-container {
+	height: 700px;
+}
+
+section#join-container {
+	height: 600px;
+}
+
+section#trading-container {
+	height: 900px;
+}
+
+div.intro {
+	margin: 2% 2%;
+	float: left;
+	width: 60%;
+	border: solid thick rgba(66,108,190,0.85);
+	border-right: none;
+	border-bottom: none;
+	border-radius: 10px 7px 0px 0px;
+}
+
+div#intro-FAQ {
+	width: 80%;
+}
+
+div.intro h2 {
+	text-indent: 5%;
+	font-size: 1.2em;
+}
+
+/* -- join.html -- */
+
+section #profile {
+	display: none;
+}
+form fieldset.colorBkg {
+	background-color: rgba(0,14,98,0.10);
+	width: 90%;
+	margin: 0 auto;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	-webkit-box-shadow: 0 0 5px 2px rgba(95,95,95,0.7);
+    box-shadow: 0 0 5px 2px rgba(95,95,95,0.7); 
+}
+
+form fieldset#personalInfo {
+	width: 70%;
+	min-width: 400px;
+	margin: 0 auto;
+	line-height: 3em;
+	border: solid thin rgba(58,58,58,0.4);
+	background-color: white;
+}
+
+
+fieldset#personalInfo label {
+   width: 10em;
+   text-align: right;
+   float: left;
+   clear: left;
+   margin: 11px 10px 0 0;
+   font-weight: bold;
+   font-size: 1em;
+}
+
+fieldset#personalInfo legend {
+	border: solid thin rgba(191,191,191,1.00);
+	display: none;
+}
+
+fieldset#personalInfo input {
+   margin: 7px 5px 0 0;
+}
+
+form fieldset#personalInfo label, input {
+	line-height: 1.5em;
+}
+
+fieldset#personalInfo span em {
+	font-size: 0.6em;
+}
+
+fieldset#personalInfo input#createBtn {
+	margin-left: 40%;
+}
+
+#usernameError, #passwordError, #emailError {
+	font-size: 0.7em;
+	color: rgba(227,0,70,1.00);
+	margin-left: 30%;
+}
+
+/* -- payment info -- */ 
+fieldset#paymentInfo {
+	margin-top: 25px;
+}
+
+fieldset#paymentInfo legend {
+	margin-left: 35%;
+}
+
+
+
+form fieldset.creditGroup {
+	width: 70%;
+	margin: 0 auto;
+	border: dotted thin rgba(58,58,58,0.4);
+}
+
+fieldset.creditGroup label {
+   width: 10em;
+   text-align: right;
+   float: left;
+   clear: left;
+   margin: 8px 10px 10px 0;
+   font-weight: bold;
+   font-size: 1em;
+}
+
+img#ccCards {
+	margin-top: 10px;
+}
+
+fieldset.creditGroup input, select {
+   margin: 7px 5px 10px 0;
+
+}
+
+fieldset#paypalPayment {
+	width: 70%;
+	margin: 0 auto;
+	border: dotted thin rgba(58,58,58,0.4);
+	border-top: none;
+}
+
+fieldset input span img#paypalBtn {
+	padding-top: 10px;
+}
+
+/* Main */
+
+main div.intro h1 {
+   font-size: 2em;
+	background-color: rgba(85,85,85,0.2);
+   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   line-height: 1em;
+   margin: 0% 3% 3% -0.03%;
+   width: 100%;
+   text-align: center;
+   padding: 20px 5px;
+   border-radius: 0px 2px 0px 0px;
+   border-bottom: solid thick #ffbf46;
+}
+
+main div.intro h1#borderTop {
+	border-top: solid thick rgba(66,108,190,0.87);
+	border-radius: 0px 2px 0px 0px;
+}
+
+
+div.aside {
+	margin-right: 20px;
+	width: 30%;
+	float: left; 
+}
+
+h2#try_risk_free a {
+	position: relative;
+	top: 36px;
+}
+h2#try_risk_free a span#first hr, span#second hr {
+	width: 60%;
+}
+
+h2#try_risk_free a span#first, #try_risk_free a{
+	color: darkblue;
+	font-family: Cinzel;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.4em;
+	line-height: 1em;
+	margin-top: 5%;
+	text-decoration: none;
+}
+h2#try_risk_free a span#first:hover {
+	color:black;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+h2#try_risk_free a span#second, #try_risk_free a {
+	color: darkblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.2em;
+	line-height: 1em;
+	top: 15px;
+	text-decoration:none;
+}
+
+h2#try_risk_free a span#second:hover {
+	color: rgba(193,128,22,1.00);
+}
+
+div#trialOffer {
+	margin-top: 100px;
+	font-size: 2em;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+div#trialOffer h1 span {
+	color: darkblue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: Cinzel;
+}
+aside.main-bottom {
+	clear: both;
+	float:none;
+	max-width: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+/*	border: dashed  #222222;*/
+}
+
+#call-to-action {
+	padding: 20px 0px;
+}
+
+#call-to-action img {
+	max-width: 100%;
+	margin-right: 20px;
+}
+aside.main-bottom figure {
+	text-align: center;
+}
+div.plans {
+	width: 33%;
+	display: inline-block;
+}
+
+div.aside img.top-right-img {
+	-webkit-box-shadow: 3px 3px 10px 2px rgba(27,27,27,1.00);
+    -moz-box-shadow: 3px 3px 10px 2px rgba(27,27,27,1.00);
+	box-shadow: 3px 3px 10px 2px rgba(27,27,27,1.00);
+	max-width: 100%;
+	height: auto;
+	margin-top: 40px;
+}
+
+#cellphoneImg {
+	margin-top: 7%;
+}
+
+figcaption#floatLeft, ul#web-based-trading{
+	list-style: inside;
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+div.aside video#videoHome {
+	margin-top: 50px;
+	max-width: 100%;
+	width: 350px;
+}
+
+span.center {
+	margin: 0 auto;
+}
+
+.videoTrading {
+	margin-top: 140px;
+	max-width: 100%;
+}
+
+div.aside #web-based-anchor {
+	text-decoration: none;
+	color: #426cbe;
+}
+figcaption, #delete {
+	color: rgba(255,103,0,1.00);
+	position: relative;
+	top: 10px;
+	text-align: center;
+	height: auto;
+}
+
+
+
+div#dance {
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+div#suck {
+	height: auto;
+	width: 150px;
+	float: left;
+}
+
+div#jew {
+	float: left;
+	width: 320px;
+	height: auto;
+	text-align: center;
+	margin-left: 20px;
+}
+
+
+
+div#join-aside {
+	margin: 6% 15px 0px 0px;
+}
+
+div#join-aside audio#jim {
+	float: right;
+}
+figure.jim-speaks img.jim-speaks-img {
+    
+	max-width: 100%;
+	float: right;
+}
+
+span#colorOj {
+	color: rgba(255,103,0,1.00);
+}
+
+ol {
+	text-indent: 5%;
+}
+/* FAQ Accordian */
+
+.ac-container{
+	width: 100%;	/* width of the Qestion boxes*/
+	margin: 10px auto 30px auto;
+	text-align: center;
+}
+.ac-container label{
+	padding: 5px 20px;
+	position: relative;
+	display: block;
+	color: rgba(29,29,29,1.00);
+	z-index: 20;
+	cursor: pointer;
+	line-height: 33px;
+	font-size: 19px;
+	background: #ffffff;
+	/* gradient applied on tabs of the accordion menu */
+	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+.ac-container label:hover{
+	background: #fff;	/* hover on tabs, white color */
+}
+
+/* styling of the expanded tab text */
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: rgba(66,108,190,0.60);
+	color: rgba(73,48,0,1.00);
+	box-shadow: 
+		0px 2px 1px rgba(0,0,0,1);
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	background: transparent url(arrow_down.png) no-repeat center center;
+}
+
+.ac-container input:checked + label:hover:after{
+	background-image: url(arrow_up.png);
+	
+}
+.ac-container input{
+	display: none;	/* there is no real input */
+}
+/* styling the article text */
+.ac-container article{
+	background: rgba(255, 255, 255, 0.5);	/* text bg color */
+	margin-top: 0px;	/* no top margin, just padding */
+	height: 0px;		/* initial height */
+	position: relative;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	overflow: scroll;
+}
+.ac-container input:checked ~ article{
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container article p{	/* just styling the paragraphs */
+	font-style: italic;
+	
+	
+	color: black;
+	margin: 0;		/* no margin, we have used padding */
+	line-height: 23px;
+	font-size: 1em;
+	padding: 15px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.ac-container input:checked ~ article.ac-small{
+	height: 140px;
+}
+.ac-container input:checked ~ article.ac-medium{
+	height: 180px;
+}
+.ac-container input:checked ~ article.ac-large{
+	height: 230px;
+}
+
+
+/* Bottom Navigation Styles */
+
+nav#bottom {
+   color: rgb(211, 211, 211);
+   padding: 30px 0px;
+	width: 100%;
+   background: rgba(107,107,107,1.00);
+	text-align: center;
+   clear: both;
+	height: 300px;
+}
+
+nav#bottom div#questions {
+	margin-left: -12px;
+	width: 300px;
+	font-size: 1.2em;
+}
+
+nav#bottom ul#shareFooter li {
+   font-size: 1em;
+   line-height: 1.8em;
+   text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+
+nav#bottom ul#shareFooter li a {
+   color: white;
+	
+}
+
+footer nav ul#shareFooter {
+	width: 20%;
+	margin: 0 auto;
+	
+}
+
+footer nav form.form-horizontal {
+	width: 30%;
+	float: left;
+	line-height: 1.2em;
+}
+
+
+label.control-label {
+	float: left;
+	margin-left: 35px;
+}
+div.form-group {
+	width: 500px;
+} 
+input#inputName {
+	margin-right: 75px;
+	background-color: #F5F5F5;
+}
+input#inputEmail {
+	margin-right: 40px;
+	background-color: #F5F5F5;
+}
+textarea.form-control {
+	background-color: #F5F5F5;
+	overflow: scroll;
+}
+div.preferEmail {
+	width: 513px;
+}
+
+div.preferEmail span {
+	text-align: left;
+}
+footer {
+   width: 100%;
+   clear: both;
+}
+
+/* Footer Styles */
+
+
+footer p {
+   color: rgb(211, 211, 211);
+   font-size: 0.9em;
+   text-align: center;
+   background-color: rgb(52, 55, 49);
+   margin: 0px;
+   padding: 10px 0px;
+}
+
+
+
+/* -- Small Notebooks -- */
+
+@media only screen and (min-width : 975px ) and (max-width : 1199px ) {
+	
+	nav#nav-main {
+		display: block;
+		position: relative;
+    }
+	nav#nav-main ul {
+    	width: 100%; 
+		margin-left: 0%;
+    	background-color: #426cbe;
+		position: absolute;
+		
+}	
+	nav form#signIn {
+		left: 50%;
+}
+	nav#nav-main ul {
+		margin-left: 13%; 
+		max-width: 87%;
+	}
+	nav#nav-mobile {
+    	display: none; 
+	}
+	nav #forgot {
+		font-size: 0.9em;
+	}
+	main div.intro h1 {
+		font-size: 2.2em;
+	}
+	main div.intro p {
+		font-size: 1em;
+	}
+	ul#shareFooter {
+		font-size: 0.8em;
+	}
+	span.fltLft {
+		width: 350px;
+}
+			section#trading-container {
+		height: 1600px;
+	}
+
+}
+
+/* -- Tablets -- */
+
+@media only screen and (min-width : 625px ) and (max-width : 974px ) {
+
+	nav#nav-main {
+		background-color: #426cbe;
+		height: 55px;
+	}
+	
+	nav form#signIn {
+		left: 0%;
+		float: right;
+	}
+	nav #forgot {
+		font-size: 0.9em;
+	}
+	#active {
+		display: none;
+	}
+	#nav-trigger span {
+    	display: inline-block;
+		padding: 15px;
+		border-radius: 8px;
+    	background-color: #ffbf46;
+    	color: black;
+    	cursor: pointer;
+    	text-transform: uppercase; 
+	}
+    #nav-trigger span:after {
+    	display: inline-block;
+    	content: "";
+    	border-left: solid 10px transparent;
+    	border-top: solid 10px #000;
+    	border-right: solid 10px transparent; 
+	}
+    #nav-trigger span:hover {
+        background-color:#FFAE15;
+    }
+    #nav-trigger span.open:after {
+    	border-left: solid 10px transparent;
+    	border-top: none;
+    	border-bottom: solid 10px #000;
+    	border-right: solid 10px transparent;
+    }
+
+	nav#nav-mobile {
+        position: relative;
+        display: none; 
+	}
+    nav#nav-mobile ul {
+    	display: none;
+    	border-radius: 8px;
+		width: 30%;
+    	position: absolute;
+    	left: 0;
+    	right: 500px;
+    	margin-left: 55px;
+    	margin-right: auto;
+    	text-align: center;
+    	background-color: #ffbf46; 
+	}
+    nav#nav-mobile li {
+    	display: block;
+    	padding: 5px 0;
+    	margin: 0 5px;
+    	border-bottom: solid 2px #fff; 
+	}
+    nav#nav-mobile li:last-child {
+        border-bottom: none; 
+	} 
+    nav#nav-mobile a {
+   	    display: block;
+   	    color: #000;
+   	    padding: 10px 30px; 
+	}
+    nav#nav-mobile a:hover {
+        background-color:#FFAE15;
+        color: #000; 
+	}
+	#nav-trigger {
+        display: block; 
+		float: left;
+		margin-left: 55px;	
+		height: 50px;
+		margin-top: 6px;
+	}
+    nav#nav-mobile {
+        display: block; 
+	}
+	section.container { 
+		display: block;
+    	margin: 3% 2% 3% 2%;
+    	background-color: white;
+    	border: 1px solid rgb(221, 221, 221); 
+		height: 100%;
+} 	
+	
+	p {
+		font-size: 1em;
+	}	
+	
+	main div.intro {
+		width: 80%;
+	}
+	main div.intro h1 {
+		font-size: 1.3em;
+	}
+	div.aside {
+		width: 400px;
+		margin-left: 5px;
+	}
+	span.fltLft {
+	    width: 200px;
+}
+	img.top-right-img {
+	    max-width: 100%;
+}
+	div#cellphoneImg {
+		
+	}
+	section#trading-container {
+		height: 2000px;
+	}
+	
+	figure.mediaImg {
+		margin-left: 5px;
+		height: auto;
+	}
+	div.main-bottom {
+		width: 100%;
+	}
+	div.form-group {
+		width: 500px;
+} 
+	
+	footer nav ul#shareFooter {
+		width: 20%;
+		margin-left: 75%;
+	
+}
+	nav#bottom ul#shareFooter li {
+	   font-size: 0.7em;
+	   line-height: 1em;
+	}
+
+
+}
+
+
+/* -- Smartphones -- */
+
+@media only screen and (max-width : 624px ){
+	nav#nav-main {
+		background-color: #426cbe;
+		height: 55px;
+	}
+	
+	nav form#signIn {
+		left: 0%;
+		float: right;
+		width: 315px;
+		height: 55px;
+		margin-right: -10px;
+
+    }
+	nav form#signIn input {
+		margin-left: 0.8em;
+		margin-top: 1em; /*centers form vertically inside nav*/
+		margin-bottom: 0px;
+}
+	form#signIn input#account, input#password {
+		width: 90px;
+	}
+	#pw1 span {
+		margin-left: 7px;
+	}
+
+	#active {
+		display: none;
+	}
+	#nav-trigger span {
+    	display: inline-block;
+		padding: 2px 4px;
+		border-radius: 8px;
+    	background-color: #ffbf46;
+    	color: black;
+    	cursor: pointer;
+    	text-transform: uppercase;
+		font-size: 1em;
+	}
+    #nav-trigger span:after {
+    	display: inline-block;
+    	content: "";
+    	border-left: solid 10px transparent;
+    	border-top: solid 10px #000;
+    	border-right: solid 10px transparent; }
+    #nav-trigger span:hover {
+        background-color:#FFAE15;
+    }
+    #nav-trigger span.open:after {
+    	border-left: solid 10px transparent;
+    	border-top: none;
+    	border-bottom: solid 10px #000;
+    	border-right: solid 10px transparent;
+    }
+	#nav-trigger {
+        display: block; 
+		float: left;
+		margin-left: 5px;	
+		height: 50px;
+		margin-top: 12px;
+		width: 60px;
+	}
+
+	nav#nav-mobile {
+        position: relative;
+        display: none; }
+    nav#nav-mobile ul {
+    	display: none;
+    	border-radius: 8px;
+		width: 30%;
+    	position: absolute;
+    	left: 5px;
+    	right: 500px;
+    	
+    	margin-right: auto;
+    	text-align: center;
+    	background-color: #ffbf46; }
+    nav#nav-mobile li {
+    	display: block;
+
+    	padding: 5px 0;
+    	margin: 0 5px;
+    	border-bottom: solid 2px #fff; }
+    nav#nav-mobile li:last-child {
+        border-bottom: none; } 
+    nav#nav-mobile a {
+   	    display: block;
+   	    color: #000;
+   	    padding: 10px 30px; }
+    nav#nav-mobile a:hover {
+        background-color:#FFAE15;
+        color: #000; }
+
+	a#forgot {
+		margin-left: 50px;
+		font-size: 0.6em;
+	}
+    nav#nav-mobile {
+        display: block; 
+	}
+	section.container { 
+	   display: block;
+	   margin: 3% 2% 3% 2%;
+	   background-color: white;
+	   border: 1px solid rgb(221, 221, 221); 
+	   height: 100%;
+	} 
+	section#trading-container {
+		height: 2100px;
+	}
+	section#join-container {
+		height: 1000px;
+	}
+
+	div.intro {
+		margin: 15px 0;
+		float: left;
+		width: 100%;
+		border-radius: 10px 7px 0px 0px;
+	}	
+	div#intro-FAQ {
+		width: 100%;
+	}
+	section.ac-container label {
+		font-size: 0.85em;
+	}
+	div.intro p {
+		font-size: 1em;
+	}
+	main div.intro h1 {
+		font-size: 1.3em;
+		padding: 8px 2px;
+	}
+	span.fltLft {
+		display: none;
+}
+	figcaption#floatLeft {	
+		top: 20px;
+	}
+	
+	div.aside, figure.mediaImg, img.top-right-img {
+		max-width: 100%;
+	
+}
+	form fieldset#personalInfo label {
+		text-align: left;
+	}
+	
+	div.aside {
+		width: 400px;
+		margin-left: 5px;
+	}
+	
+	figure.mediaImg {
+		margin-top: -150px;
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+	div.main-bottom {
+		width: 100%;
+	}
+/* Bottom Navigation Styles */
+
+	nav#bottom {
+	   padding: 8px 0px;   
+	}
+	textarea.form-control {
+		width: 250px;
+	}
+	div.form-group {
+		width: 350px;
+	}
+	label.control-label {
+		float: left;
+		margin-left: 5px;
+	}
+
+	footer nav ul#shareFooter {
+		width: 200px;
+		margin-top: 235px;	
+}
+	
+	nav#bottom ul#shareFooter li {
+	   font-size: 0.8em;
+	   line-height: 1em;
+		display: inline-block;
+		float: left;
+	}	
+	
+	div.preferEmail {
+		width: 370px;
+}
+	div.preferEmail span {
+		font-size: 0.7em;
+	}
+
+	nav#bottom ul li {
+	   font-size: 1em;
+	   line-height: 1.8em;
+	   text-decoration: underline;
+		display: inline-block;
+		text-align: center;
+	}
+
+	nav#bottom ul li a {
+	   color: white;
+	   font-size: 0.9em;
+	}
+	
+	footer .btmFooter {
+		text-align: left;
+		font-size: 0.7em;
+		
+	}
+}
